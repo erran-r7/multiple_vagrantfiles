@@ -1,0 +1,6 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+config.vm.define :client do |client_config|
+  client_config.vm.hostname = 'client'
+end

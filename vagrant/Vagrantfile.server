@@ -1,0 +1,5 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Here you can use the server_config variable
+server_config.vm.hostname = 'server'
