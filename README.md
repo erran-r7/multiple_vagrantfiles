@@ -1,4 +1,4 @@
-# Multiple `Vagrantfiles`
+# Multiple Vagrantfiles
 MultiVM Vagrantfiles are common, but having tons of VM specific configuration can easily clutter it.
 Currently files out of the Vagrant load can be loaded in a Vagrantfile like as follows or through running `eval` on them:
 
