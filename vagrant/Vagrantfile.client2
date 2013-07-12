@@ -2,8 +2,6 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = 'precise64'
-
   config.vm.define :client2 do |client2_config|
     client2_config.vm.hostname = 'client2'
   end
