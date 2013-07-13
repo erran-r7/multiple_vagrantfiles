@@ -1,6 +1,6 @@
 # Multiple Vagrantfiles
-MultiVM Vagrantfiles are common, but having tons of VM specific configuration can easily clutter it.
-Currently files out of the Vagrant load can be loaded in a Vagrantfile like as follows or through running `eval` on them:
+Read the Vagrantfile in this repository to see information on creating MultiVM Vagrantfiles.
+I've seen something similar to the following in Vagrant core:
 
 `Vagrantfile`:
 
@@ -22,3 +22,5 @@ Vagrant.configure("2") do |config|
   end
 end
 ```
+
+I personally like the style of having a `vagrant` directory on the same level as my Vagrantfile where I do general configuration and I later add overrides in `Vagrantfile.role_based_extension` files.
