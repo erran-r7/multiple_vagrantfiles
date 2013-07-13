@@ -49,6 +49,9 @@ vagrantfiles = %w[vagrant/Vagrantfile.client vagrant/Vagrantfile.server]
 vagrantfiles.each do |vagrantfile|
   load File.expand_path(vagrantfile) if File.exists?(vagrantfile)
 end
+```
+
+`vagrant/Vagrantfile.server`:
 
 ```ruby
 Vagrant.configure('2') do |config|
