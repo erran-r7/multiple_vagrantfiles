@@ -29,10 +29,10 @@ do general configuration and I later add overrides in `Vagrantfile.role_based_ex
 Trimmed Directory structure:
 
 ```
+|- Vagrantfile
 |- vagrant/
 |-- Vagrantfile.client
 |-- Vagrantfile.server
-Vagrantfile
 ```
 
 `Vagrantfile`:
