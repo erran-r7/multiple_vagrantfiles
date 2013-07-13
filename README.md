@@ -26,7 +26,7 @@ end
 I personally like the style of having a `vagrant` directory on the same level as my Vagrantfile where I
 do general configuration and I later add overrides in `Vagrantfile.role_based_extension` files.
 
-**Trimmed Directory structure**:
+Trimmed Directory structure:
 
 ```
 |- vagrant/
@@ -35,7 +35,7 @@ do general configuration and I later add overrides in `Vagrantfile.role_based_ex
 Vagrantfile
 ```
 
-And loading is handled like so:
+Vagrantfile:
 
 ```ruby
 Vagrant.configure('2') do |config|
@@ -50,4 +50,15 @@ vagrantfiles.each do |vagrantfile|
   load File.expand_path(vagrantfile) if File.exists?(vagrantfile)
 end
 
+```ruby
+Vagrant.configure('2') do |config|
+  config.vm.define :server do |server_config|
+    server_config.vm.hostname = 'example-server'
+    server_config.vm.network :private_network, ip: '33.33.33.11'
+
+    server_config.vm.provision :chef_solo do |chef|
+      chef.run_list = ['recipe[web::server]']
+    end
+  end
+end
 ```
