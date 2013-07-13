@@ -15,3 +15,6 @@ end
 
 client_vagrantfile2 = File.expand_path('../vagrant/Vagrantfile.client2', __FILE__)
 load client_vagrantfile2 if File.exists?(client_vagrantfile2)
+
+client_vagrantfile3 = File.expand_path('../Vagrantfile.client2', __FILE__)
+load client_vagrantfile3 if File.exists?(client_vagrantfile3)
