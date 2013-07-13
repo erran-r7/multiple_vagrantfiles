@@ -35,7 +35,7 @@ Trimmed Directory structure:
 Vagrantfile
 ```
 
-Vagrantfile:
+`Vagrantfile`:
 
 ```ruby
 Vagrant.configure('2') do |config|
