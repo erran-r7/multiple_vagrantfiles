@@ -1,0 +1,8 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.define :client3 do |client3_config|
+    client2_config.vm.hostname = 'client3'
+  end
+end
