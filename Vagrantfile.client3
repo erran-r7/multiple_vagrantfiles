@@ -3,6 +3,6 @@
 
 Vagrant.configure("2") do |config|
   config.vm.define :client3 do |client3_config|
-    client2_config.vm.hostname = 'client3'
+    client3_config.vm.hostname = 'client3'
   end
 end
