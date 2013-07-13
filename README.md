@@ -1,5 +1,5 @@
 # Multiple Vagrantfiles
-Read the Vagrantfile in this repository to see information on creating MultiVM Vagrantfiles.
+Read the `Vagrantfile` in this repository to see information on creating Multi-VM `Vagrantfiles`.
 I've seen something similar to the following in Vagrant core:
 
 `Vagrantfile`:
@@ -23,4 +23,14 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-I personally like the style of having a `vagrant` directory on the same level as my Vagrantfile where I do general configuration and I later add overrides in `Vagrantfile.role_based_extension` files.
+I personally like the style of having a `vagrant` directory on the same level as my Vagrantfile where I
+do general configuration and I later add overrides in `Vagrantfile.role_based_extension` files.
+
+*Trimmed Directory structure*:
+
+```
+|- vagrant/
+|-- Vagrantfile.client
+|-- Vagrantfile.server
+Vagrantfile
+```
