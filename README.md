@@ -35,6 +35,8 @@ Trimmed Directory structure:
 |-- Vagrantfile.server
 ```
 
+# Best solution
+
 `Vagrantfile`:
 
 ```ruby
